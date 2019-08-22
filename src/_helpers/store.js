@@ -28,7 +28,7 @@ const store = createStore(
     rootReducer,
     persistedStore,
     applyMiddleware(
-        logger
+        //logger
     )
 )
 

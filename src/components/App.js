@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import {history} from './../_helpers/history'
-import {Router, Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 import {clear} from './../_actions/redux.actions'
 
 import HomeContainer from './../containers/HomeContainer'
@@ -23,7 +23,7 @@ class App extends React.Component {
         console.log("This is the process.env", process.env)
         return (
             <div>
-                <Router history={history} basename={process.env.PUBLIC_URL}>
+                <Router history={history}>
                     <Switch>
                         <PrivateRoute exact path = {"/"} component={HomeContainer}  />
                         <Route exact path = {"/login"} component={LoginContainer} />
