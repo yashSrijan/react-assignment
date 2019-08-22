@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Error = (props) => {
+export const Error = () => {
     return (
-        <h4>Error Page</h4>    
+        <center>
+            <h4>404 - The page you are looking for is not found !</h4> 
+        </center>
     )
 }

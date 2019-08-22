@@ -20,13 +20,13 @@ class App extends React.Component {
     }
 
     render() {
+        console.log("This is the process.env", process.env)
         return (
             <div>
-                <Router history={history}>
+                <Router history={history} basename={process.env.PUBLIC_URL}>
                     <Switch>
                         <PrivateRoute exact path = {"/"} component={HomeContainer}  />
-                        <Route path = {"/login"} component={LoginContainer} />
-                        <Route path ="/error" component={Error} /> 
+                        <Route exact path = {"/login"} component={LoginContainer} />
                         <Route path ="/*" component={Error} /> 
                     </Switch>
                 </Router>
