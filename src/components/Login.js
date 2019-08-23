@@ -13,7 +13,7 @@ export class Login extends React.Component {
         }
     }
 
-    handleChange = (e) => this.setState({ [e.target.name] : e.target.value })
+    handleChange = (e) => this.setState({ [e.target.name] : e.target.value.trim() })
 
     submitLoginForm = (e) => {
         e.preventDefault()

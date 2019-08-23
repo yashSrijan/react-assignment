@@ -1,3 +1,30 @@
+# react-assignment
+
+This is a ReactJS app demonstrating a simple carousal in which the number of slides are chosen by the user. Login (with predefined credentials) is required to access the home page of the app.
+
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/) to install the required dependencies listed in package.json file. Navigate to the root dir of the project, open the terminal and do :
+
+```bash
+npm install
+```
+
+After this, do :
+```bash
+npm start
+```
+and the app should start on [localhost](http://localhost:3000/#/login) .
+
+## Overview
+
+I have used redux and sessionStorage to persist the state over multiple reloads. I have also demonstrated the use of Hooks (useState hook in Home component). I have also added comments in the code so that one could get what is actually going on in the app.
+There is Router setup to handle multiple routes. I initially used Browser Router but that was [creating some issue](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a) when I uploaded the app on gh-pages, so I had to move it to Hash Router which prepends a '#/' in every route but its working fine. The app is using bootstrap via CDN (mainly for carousal and forms) and I have written a bit of custom css as well.
+
+***
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
