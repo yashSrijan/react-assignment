@@ -5,6 +5,7 @@ export class Login extends React.Component {
 
     constructor(props) {
         super(props);
+        //log the user out whenever this component's route is visited
         this.props.logout();
         this.state = {
             username : "",
